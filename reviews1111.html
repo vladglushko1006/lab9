@@ -1,0 +1,83 @@
+<body>
+   <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+            <p><h3>© Glushko Incorporated</h3></p>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="index.html#news">Новини</a></li>
+          <li><a href="admin.html">Адмін</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Студентам<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="curiculum.html">Програма</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Лабораторні</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Література</a></li>
+            </ul>
+          </li>
+          <li class="active"><a href="rewievs.html">Відгуки</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+
+
+    		<div id="reviews-list">
+
+    			<div class="container card">
+    				<br>
+    				<span class="review-author">Вася Пупкін</span>
+    				<span class="review-date">11.11.2017, 14:00</span>
+    				<p>
+    					<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus eget ipsum nec vulputate.
+    					Sed vestibulum augue vel dictum imperdiet. Duis sed augue posuere, tempus diam vitae, efficitur
+    					ligula. Ut nec neque condimentum, vehicula ligula bibendum, bibendum lacus. Maecenas consectetur
+    					hendrerit laoreet. Donec massa nunc, mattis ut auctor non, lobortis a mauris. Donec commodo, ex eget
+    					gravida ornare, leo eros egestas mauris, nec pulvinar ipsum turpis eu urna. Donec suscipit purus
+    					velit, sit amet vehicula erat consequat ac. Donec pretium mattis justo, eu finibus dolor scelerisque
+    					non. Fusce risus ipsum, lobortis in maximus ut, tincidunt sit amet lacus. Nullam efficitur lectus at
+    					mauris gravida, in tristique quam faucibus. Etiam sagittis cursus lorem, eu dapibus nisi accumsan a.
+    					Sed ultricies felis ut tortor blandit tempor.
+    				</p><br>
+    			</div>
+
+
+    		</div>
+<br></br>
+    		<form class="container card" id="form">
+          <br></br>
+    			<h4>Новий відгук</h4>
+          <br></br>
+    			<div class="form-group">
+    				<div class="col-xs-12">
+    					<input id="name" type="text" class="form-control" placeholder="Прізвище та ім'я'">
+    				</div>
+    				<br><br>
+    				<div class="col-xs-12">
+    					<textarea id="text" class="form-control" rows="7" placeholder="Ваш відгук"></textarea>
+    					<br>
+    					<input type="button" value="Надіслати" class="btn btn-primary" onclick="addReview()">
+    				</div>
+    			</div>
+    		</form>
+
+    	</div>
+
+  
+  <script src="js/reviews.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
